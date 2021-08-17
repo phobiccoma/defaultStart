@@ -1,0 +1,57 @@
+html,
+body {
+	height: 100%;
+	min-width: 280px;
+	// font-weight: 400;
+	// font-size: 16px;
+	// line-height: 28px;
+	@extend %font-base;
+	overflow-x: hidden;
+}
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+.off {
+	display: none !important;
+}
+//`LAYOUT
+
+//` CONTAINERS
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.container {
+	max-width: 1170px;
+	height: 100%;
+	margin: 0 auto;
+}
+.container-fluid {
+	max-width: 1920px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 25px;
+}
+
+//` TITLES
+h1,
+h2,
+h3,
+h4 {
+	@extend %font-title;
+}
+
+//` LINKS
+a {
+	display: block;
+	// color: rgba(54, 56, 56, 0.9);
+}
+
+//` BUTTONS
+label {
+	cursor: pointer;
+}
